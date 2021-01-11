@@ -20,11 +20,16 @@ public class CodingBat {
         return a + b;
     }
 
+    public static int diff21(int n) {
+        int diff = 21-n;
+        if(n > 21){
+            return diff * -2;
+        }
+        return diff;
+    }
+
     public static void main(String[] args) {
-        System.out.println(sleepIn(false,false));
-        System.out.println(sleepIn(true,false));
-        System.out.println(monkeyTrouble(true,true));
-        System.out.println(sumDouble(10,10));
-        System.out.println(sumDouble(8,4));
+        System.out.println(diff21(14));
+        System.out.println(diff21(25));
     }
 }
