@@ -1,3 +1,4 @@
+import java.util.List;
 public class CodingBat {
     public static boolean sleepIn(boolean weekday, boolean vacation) {
         if(!weekday || vacation){
@@ -26,6 +27,10 @@ public class CodingBat {
             return diff * -2;
         }
         return diff;
+    }
+    public static List<Integer> doubling(List<Integer> nums) {
+        nums.replaceAll(n -> n * 2);
+        return nums;
     }
 
     public static void main(String[] args) {
