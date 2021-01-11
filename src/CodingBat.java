@@ -6,8 +6,16 @@ public class CodingBat {
         return false;
     }
 
+    public static boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+        if(aSmile && bSmile || !aSmile && !bSmile){
+            return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         System.out.println(sleepIn(false,false));
         System.out.println(sleepIn(true,false));
+        System.out.println(monkeyTrouble(true,true));
     }
 }
