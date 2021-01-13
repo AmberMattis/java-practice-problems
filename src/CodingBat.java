@@ -33,6 +33,12 @@ public class CodingBat {
         return nums;
     }
 
+    //Given a list of integers, return a list where each integer is multiplied with itself.
+    public List<Integer> square(List<Integer> nums) {
+        nums.replaceAll(n->n*n);
+        return nums;
+    }
+
     public static void main(String[] args) {
         System.out.println(diff21(14));
         System.out.println(diff21(25));
