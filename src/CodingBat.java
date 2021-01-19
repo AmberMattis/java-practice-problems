@@ -43,4 +43,15 @@ public class CodingBat {
         System.out.println(diff21(14));
         System.out.println(diff21(25));
     }
+
+    public boolean parrotTrouble(boolean talking, int hour) {
+        if((hour > 20 || hour < 7) && (talking == true)){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+
+
 }
