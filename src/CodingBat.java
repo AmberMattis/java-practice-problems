@@ -114,6 +114,19 @@ public class CodingBat {
     }
 
 
+    public boolean startHi(String str) {
+        if(str.length() < 2){
+            return false;
+        }
+
+        String firstTwoElements = str.substring(0,2);
+        if(firstTwoElements.equals("hi")){
+            return true ;
+        } else {
+            return false;
+        }
+    }
+
 
 
 
