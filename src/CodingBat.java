@@ -173,6 +173,13 @@ public class CodingBat {
         // Alternately could use the Java xor operator, but it's obscure.
     }
 
+    public String delDel(String str) {
+        if(str.length() >= 4 && str.substring(1,4).equals("del")){
+            return str.substring(0,1) + str.substring(4);
+        }
+        return str;
+    }
+
 
 
 
