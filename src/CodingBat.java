@@ -221,6 +221,40 @@ public class CodingBat {
             return results;
         }
 
+    public int intMax2(int a, int b, int c) {
+        int max;
+
+        // First check between a and b
+        if (a > b) {
+            max = a;
+        } else {
+            max = b;
+        }
+
+        // Now check between max and c
+        if (c > max) {
+            max = c;
+        }
+
+        return max;
+
+        // Could use the built in Math.max(x, y) function which selects the larger
+        // of two values.
+    }
+
+    public int close10(int a, int b) {
+        int aDiff = Math.abs(a-10);
+        int bDiff = Math.abs(b-10);
+
+        if(aDiff > bDiff){
+            return b;
+        }
+        if(bDiff > aDiff ){
+            return a;
+        }
+        return 0;
+    }
+
 
 
 
