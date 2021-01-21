@@ -196,15 +196,30 @@ public class CodingBat {
     public String startOz(String str) {
         String result = "";
 
-        if (str.length() >= 1 && str.charAt(0)=='o') {
+        if (str.length() >= 1 && str.charAt(0) == 'o') {
             result = result + str.charAt(0);
         }
 
-        if (str.length() >= 2 && str.charAt(1)=='z') {
+        if (str.length() >= 2 && str.charAt(1) == 'z') {
             result = result + str.charAt(1);
         }
 
         return result;
+    }
+
+        public int intMax(int a, int b, int c) {
+            int results = 0;
+            if(a > b && a > c){
+                results = a;
+            }
+            if(b > a && b > c){
+                results = b;
+            }
+            if (c > a && c > b){
+                results = c;
+            }
+            return results;
+        }
 
 
 
