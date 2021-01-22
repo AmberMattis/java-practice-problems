@@ -286,7 +286,7 @@ public class CodingBat {
 
 
     //above code refactored
-    public int max1020(2int a, int b) {
+    public int max10202(int a, int b) {
         // First make it so the bigger value is in a
         if (b > a) {
             int temp = a;
@@ -298,6 +298,16 @@ public class CodingBat {
         if (a >= 10 && a <= 20) return a;
         if (b >= 10 && b <= 20) return b;
         return 0;
+    }
+
+    //practice
+    public boolean stringE(String str) {
+        int count = 0;
+
+        for(int i = 0; i < str.length(); i++){
+            if(str.charAt(i) == 'e') count++;
+        }
+        return (count>= 1 && count <=3);
     }
 
 
