@@ -330,6 +330,14 @@ public class CodingBat {
         return result;
     }
 
+    public String stringTimes2(String str, int n) {
+        String result = "";
+
+        for (int i = 0; i < n; i++){
+            result += str;
+        }
+        return result;
+    }
 
 
 
