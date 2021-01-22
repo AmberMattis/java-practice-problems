@@ -263,6 +263,26 @@ public class CodingBat {
         return false;
     }
 
+    public int max1020(int a, int b) {
+        int result = 0;
+        if((a > b) && (a >= 10 && a <=20 )){
+            result = a;
+        }
+        if((a < b) && (b < 10 || b > 20)){
+            result = a;
+        }
+
+        if((b > a) && (b >= 10 && b <=20)){
+            result = b;
+        }
+        if((b < a) && (a < 10 || a > 20)){
+            result = b;
+        }
+        if((b < 10 || b > 20) && (a < 10 || a > 20)){
+            result = 0;
+        }
+        return result;
+    }
 
 
 
