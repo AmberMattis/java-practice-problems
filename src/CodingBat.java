@@ -363,6 +363,21 @@ public class CodingBat {
         return count;
     }
 
+    boolean doubleX(String str) {
+        int i = str.indexOf("x");
+        if(i == -1){
+            return false;  // checking if an x even exists in the string
+        }
+        //checking if the character at i+1 is also an x
+
+        if(i+1 >= str.length()){ return false;} // checking if i + 1 is in bounds
+        return str.substring(i+1, i+2).equals("x");
+
+        // Another approach -- .startsWith() simplifies the logic
+        // String x = str.substring(i);
+        // return x.startsWith("xx");
+    }
+
 
 
 
