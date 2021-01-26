@@ -378,7 +378,7 @@ public class CodingBat {
         // return x.startsWith("xx");
     }
 
-    public String stringBits(String str) {
+    //      corrent attempt
         public String stringBits(String str) {
             String result = "";
             // Note: the loop increments i by 2
@@ -388,8 +388,21 @@ public class CodingBat {
             }
             return result;
         }
+        //my attempt
 
+    public String stringBits2(String str) {
+        String result = "";
+        for(int i = 0; i < str.length(); i++){
+            if(str.length() < 3){
+                result = str.substring(0,1);
+            }else{
+                result = str.substring(i,i+=2);
+            }
+        }
+        return result;
     }
+
+
 
 
 
