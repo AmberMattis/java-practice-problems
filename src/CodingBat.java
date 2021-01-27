@@ -431,6 +431,17 @@ public class CodingBat {
         return count;
     }
 
+    public List<Integer> doubling2(List<Integer> nums) {
+        nums.replaceAll(n -> n * 2);
+        return nums;
+
+        // OR the equivalent java streams solution:
+        // return nums.stream()
+        //  .map(n -> n * 2)
+        //  .collect(Collectors.toList());
+    }
+
+
 
 
 
