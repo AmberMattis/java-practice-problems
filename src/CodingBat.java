@@ -441,6 +441,13 @@ public class CodingBat {
         //  .collect(Collectors.toList());
     }
 
+    //Given a list of integers, return a list where each integer is multiplied by itself
+
+    public List<Integer> square2(List<Integer> nums) {
+        nums.replaceAll(n -> n * n);
+        return nums;
+    }
+
 
 
 
