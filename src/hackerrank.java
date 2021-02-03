@@ -16,6 +16,29 @@ public static void main(String[] args) {
     System.out.println(a);
     System.out.println(b);
     System.out.println(c);
+
+    System.out.println("===========================================");
+    int N = scan.nextInt();
+    scan.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+    scan.close();
+
+    boolean even = N % 2 == 0;
+    boolean odd = N % 2 != 0;
+
+    if(odd){
+        System.out.println("Weird");
+    }
+    if(even && (N >= 2 && N <= 5)){
+        System.out.println("Not Weird");
+    }
+    if(even && (N >= 6 && N <= 20)){
+        System.out.println("Weird");
+    }
+    else if(even && N > 20){
+        System.out.println("Not Weird");
+    }
+
 }
 
 }
