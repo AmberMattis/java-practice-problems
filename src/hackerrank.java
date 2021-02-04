@@ -79,6 +79,17 @@ public static void main(String[] args) {
     System.out.println("================================");
 
 
+    System.out.println("================================");
+    for(int i=0;i<3;i++)
+    {
+        String s2=scan.next();
+        int y=scan.nextInt();
+        System.out.printf("%-15s%03d%n", s2, y);
+    }
+    System.out.println("================================");
+
+
+
 
 }
 
