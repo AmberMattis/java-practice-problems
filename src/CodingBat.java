@@ -1,5 +1,10 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.List;
+import java.util.Scanner;
+
 public class CodingBat {
+
     public static boolean sleepIn(boolean weekday, boolean vacation) {
         if(!weekday || vacation){
             return true;
@@ -42,6 +47,10 @@ public class CodingBat {
     public static void main(String[] args) {
         System.out.println(diff21(14));
         System.out.println(diff21(25));
+        System.out.println(fizzBuzz("fibb"));
+
+
+
     }
 
     public boolean parrotTrouble(boolean talking, int hour) {
@@ -501,6 +510,43 @@ public class CodingBat {
 
        return false;
    }
+
+   // Given a string if the string starts with f return fizz
+   // If the string ends with b return buzz
+   // If the string starts with f and ends with b return fizzbuzz
+   // account for strings with neither f or b
+
+    //1 create a method that takes in  string as a parameter
+    //2 create a conditional that checks if the string starts with f ends with b  or both
+    //3 sout either fizz , buzz, or fizzbuzz based on the parameters of the string
+
+
+
+
+    public static String fizzBuzz(String input){
+        String fizzbuzzResult = "";
+        if(input.toLowerCase().startsWith("f") && input.toLowerCase().endsWith("b")){
+            fizzbuzzResult = "fizzbuzz";
+        }
+        if(input.toLowerCase().startsWith("f") && !input.toLowerCase().endsWith("b")){
+            fizzbuzzResult ="fizz";
+        }
+        if(!input.toLowerCase().startsWith("f") && input.toLowerCase().endsWith("b")){
+            fizzbuzzResult = "buzz";
+        } else if(!input.toLowerCase().startsWith("f") && !input.toLowerCase().endsWith("b")) {
+            fizzbuzzResult = "No fizzbuzz here.";
+        }
+        return fizzbuzzResult;
+
+    }
+
+
+
+
+
+
+
+
 
 
 
