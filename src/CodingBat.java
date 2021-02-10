@@ -1,5 +1,6 @@
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -540,6 +541,26 @@ public class CodingBat {
 
     }
 
+
+
+//    Given a list of integers, return a list where each integer is added to 1 and the result is multiplied by 10.
+//
+//
+//    math1([1, 2, 3]) → [20, 30, 40]
+//    math1([6, 8, 6, 8, 1]) → [70, 90, 70, 90, 20]
+//    math1([10]) → [110]
+
+    public List<Integer> math2(List<Integer> nums) {
+        List<Integer> mathTwo = new ArrayList<>();
+
+        for(int num : nums){
+            num = (num + 1) * 10;
+            mathTwo.add(num);
+        }
+
+        return mathTwo;
+
+    }
 
 
 
