@@ -565,6 +565,21 @@ public class CodingBat {
 
 
 
+   // Given a list of non-negative integers, return an integer list of the rightmost digits. (Note: use %)
+    public List<Integer> rightDigitTwo(List<Integer> nums) {
+        List<Integer> lastDigit = new ArrayList<>();
+
+        for(int num : nums) {
+            num = num % 10;
+            lastDigit.add(num);
+        }
+        return lastDigit;
+
+    }
+
+
+
+
 
 
 
