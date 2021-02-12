@@ -577,6 +577,33 @@ public class CodingBat {
 
     }
 
+    // Given a list of integers, return a list of the integers, omitting any that are less than 0.
+
+        //my solution
+        public List<Integer> noNeg(List<Integer> nums) {
+            List<Integer> posNums = new ArrayList<>();
+
+            for(int num : nums){
+                if(num >= 0){
+                    posNums.add(num);
+                }
+            }
+            return posNums;
+        }
+
+        //refactored solution
+
+    public List<Integer> noNeg2(List<Integer> nums) {
+        nums.removeIf(n -> n < 0);
+        return nums;
+
+        // OR the equivalent stream solution
+        // Note that the boolean logic is opposite
+        // return nums.stream()
+        //   .filter(n -> n >= 0)
+        //   .collect(Collectors.toList());
+    }
+
 
 
 
