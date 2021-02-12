@@ -605,6 +605,22 @@ public class CodingBat {
     }
 
 
+    // Given a list of non-negative integers, return a list of those numbers except omitting any that end with 9. (Note: % by 10)
+
+    //My solution
+    public List<Integer> no9(List<Integer> nums) {
+        List<Integer> newList = new ArrayList<>();
+
+        for(int num : nums){
+            if(num % 10 != 9)
+                newList.add(num);
+        }
+        return newList;
+
+    }
+
+
+
 
 
 
