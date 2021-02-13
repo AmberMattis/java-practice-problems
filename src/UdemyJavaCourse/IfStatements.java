@@ -12,6 +12,7 @@ public class IfStatements {
             System.out.println("Your score is " + score + "!");             // --- Code block can acess variables created outside of the code block
         }                                                                   // --- You cannot, outside of the code block access variables created inside of the code block, it will be out of scope
 
+        System.out.println("========================================");
         int score2 = 10000;
         int levelComplete = 8;
         int bonus2 = 200;
