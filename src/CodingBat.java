@@ -649,6 +649,25 @@ public class CodingBat {
 
 
 
+// Given a list of strings, return a list of the strings, omitting any string that contains a "z". (Note: the str.contains(x) method returns a boolean)
+
+    //My solution//
+
+    public List<String> noZ(List<String> strings) {
+
+        List<String> zLess = new ArrayList<>();
+
+        for(String string : strings ){
+            boolean containsZ = string.contains("z");
+
+            if(!containsZ){
+                zLess.add(string);
+            }
+        }
+        return zLess;
+
+    }
+
 
 
 
