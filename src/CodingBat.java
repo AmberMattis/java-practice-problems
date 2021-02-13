@@ -635,6 +635,14 @@ public class CodingBat {
 
     }
 
+    //CB solution//
+    public List<Integer> noTeen2(List<Integer> nums) {
+        nums.removeIf(n -> n >= 13 && n <= 19);
+        return nums;
+    }
+
+
+
 
 
 
