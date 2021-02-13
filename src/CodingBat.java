@@ -619,6 +619,23 @@ public class CodingBat {
 
     }
 
+//    Given a list of integers, return a list of those numbers, omitting any that are between 13 and 19 inclusive.
+
+    //My Solution//
+    public List<Integer> noTeen(List<Integer> nums) {
+        List<Integer> bucket = new ArrayList<>();
+
+        for(int num : nums){
+            if(num > 19 || num < 13){
+                bucket.add(num);
+            }
+        }
+
+        return bucket;
+
+    }
+
+
 
 
 
