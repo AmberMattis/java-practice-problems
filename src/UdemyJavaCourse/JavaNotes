@@ -1,7 +1,18 @@
-In the following code below, write down which of the following are expressions
 
-int score = 100;                                   --score = 100
-if(score > 99){                                    --score > 99
-System.out.println("You got the high score!");     --"You got the high score!"
-score = 100;                                       -- score = 100
-}
+KEYWORDS AND EXPRESSIONS
+=================================================================================
+In the following code below, write down which of the following are expressions  |
+=================================================================================
+int score = 100;                                   --score = 100                |
+if(score > 99){                                    --score > 99                 |
+System.out.println("You got the high score!");     --"You got the high score!"  |
+score = 100;                                       -- score = 100               |
+}                                                                               |
+                                                                                |
+=================================================================================
+
+STATEMENTS WHITESPACE AND INDENTATION
+    --A staement is the entire line, it includes the keyword (int, String, double, abstract...), semicolon, brackets and parentheses.
+       EX: String thisStatement = "This is a statement";   <--- This entire line is a statement
+       Statements don't have to be on the same line.
+       Complete statements generally ends in a semi-colon.
