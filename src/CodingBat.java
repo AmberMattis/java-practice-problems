@@ -655,7 +655,6 @@ public class CodingBat {
 // a "z". (Note: the str.contains(x) method returns a boolean)
 
     //My solution//
-
     public List<String> noZ(List<String> strings) {
 
         List<String> zLess = new ArrayList<>();
@@ -686,6 +685,25 @@ public class CodingBat {
         }
         return numsDoubled;
     }
+
+
+//    Given a list of integers, return a list of those numbers squared and the product added
+//    to 10, omitting any of the resulting numbers that end in 5 or 6.
+
+    // my solution //
+    public List<Integer> square56(List<Integer> nums) {
+        List<Integer> squaredNums = new ArrayList<>();
+
+        for(int num : nums){
+            num = (num * num) + 10;
+            if(num % 10 != 5 && num % 10 != 6){
+                squaredNums.add(num);
+            }
+        }
+        return squaredNums;
+
+    }
+
 
 
 
