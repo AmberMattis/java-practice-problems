@@ -605,7 +605,8 @@ public class CodingBat {
     }
 
 
-    // Given a list of non-negative integers, return a list of those numbers except omitting any that end with 9. (Note: % by 10)
+    // Given a list of non-negative integers, return a list of those numbers except omitting any
+    // that end with 9. (Note: % by 10)
 
     //My solution
     public List<Integer> no9(List<Integer> nums) {
@@ -619,7 +620,8 @@ public class CodingBat {
 
     }
 
-//    Given a list of integers, return a list of those numbers, omitting any that are between 13 and 19 inclusive.
+//    Given a list of integers, return a list of those numbers, omitting any that are between
+//    13 and 19 inclusive.
 
     //My Solution//
     public List<Integer> noTeen(List<Integer> nums) {
@@ -649,7 +651,8 @@ public class CodingBat {
 
 
 
-// Given a list of strings, return a list of the strings, omitting any string that contains a "z". (Note: the str.contains(x) method returns a boolean)
+// Given a list of strings, return a list of the strings, omitting any string that contains
+// a "z". (Note: the str.contains(x) method returns a boolean)
 
     //My solution//
 
@@ -666,6 +669,22 @@ public class CodingBat {
         }
         return zLess;
 
+    }
+
+
+//    Given a list of non-negative integers, return a list of those numbers multiplied by
+//    2, omitting any of the resulting numbers that end in 2.
+
+    // my solution //
+    public List<Integer> two2(List<Integer> nums) {
+        List<Integer> numsDoubled = new ArrayList<>();
+        for(int num : nums){
+            num*=2;
+            if(num % 10 != 2){
+                numsDoubled.add(num);
+            }
+        }
+        return numsDoubled;
     }
 
 

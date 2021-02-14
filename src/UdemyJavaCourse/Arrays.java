@@ -26,6 +26,8 @@ public class Arrays {
 
     }
 
+
+
     //Write a method that return the sum of an array of integers
     public static int sum (int[] nums){
         int sum = 0;
