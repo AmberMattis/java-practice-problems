@@ -11,6 +11,19 @@ public class Arrays {
 
         System.out.println(sum(numList));
 
+        int[] numSixList = new int[6];
+
+        numSixList[0] = 1;
+        numSixList[1] = 4;
+        numSixList[2] = 3;
+        numSixList[3] = 7;
+        numSixList[4] = 7;
+        numSixList[5] = 20;
+
+
+        System.out.println(sum(numSixList));
+
+
     }
 
     //Write a method that return the sum of an array of integers
