@@ -35,6 +35,13 @@ public class Arrays {
 
         System.out.println(average(numAverage));
 
+        int[] numAverage2 = new int[3];
+
+        numAverage2[0] = 5;
+        numAverage2[1] = 4;
+        numAverage2[2] = 13;
+
+        System.out.println(average(numAverage2));
 
     }
 
