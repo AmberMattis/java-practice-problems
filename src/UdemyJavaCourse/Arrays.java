@@ -42,6 +42,7 @@ public class Arrays {
         numAverage2[2] = 13;
 
         System.out.println(average(numAverage2));
+        System.out.println(sum(numAverage2));
 
     }
 
