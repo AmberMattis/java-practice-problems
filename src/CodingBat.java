@@ -49,6 +49,8 @@ public class CodingBat {
         System.out.println(diff21(14));
         System.out.println(diff21(25));
         System.out.println(fizzBuzz("fibb"));
+        System.out.println(isPalindrome(55));
+        ;
 
 
 
@@ -725,6 +727,26 @@ public class CodingBat {
         }
         return rev;
     }
+
+    //Working on palindrome, not complete//
+
+
+        public static boolean isPalindrome(int x) {
+            boolean isPalindrome = true;
+            String stringX = new StringBuilder(x).reverse().toString();
+
+            if(stringX == Integer.toString(x)){
+                System.out.println(stringX);
+                System.out.println(Integer.toString(x));
+                isPalindrome = true;
+            }else{
+                System.out.println(stringX);
+                System.out.println(Integer.toString(x));
+                isPalindrome = false;
+            }
+            return isPalindrome;
+
+        }
 
 
 
